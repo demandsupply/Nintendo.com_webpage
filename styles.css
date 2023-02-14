@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #484848;
+    /* border: 1px solid #000; */
+}
+
+/* @font-face {
+    font-family: 'museo sans';
+    src: url(./MuseoSans-300.otf) format(otf);
+} */
+
+body {
+    font-family: 'Raleway';
+}
+
+.nav-container {
+    width: 100%;
+}
+
+.nav-container a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-one {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(218,218,218);
+}
+
+.nav-one-left {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    z-index: 2;
+}
+
+.logo {
+    width: 150px;
+    background-color: #e60012;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #e60012;
+}
+
+.logo p {
+    display: block;
+    padding: 2px 6px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border: 2px solid #fff;
+    border-radius: 55px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    width: 440px;
+    height: 40px;
+    margin-top: 8px;
+    border-bottom: 1px solid #000;
+}
+
+.search-container a {
+    display: flex;
+}
+
+.search-container .fa-search {
+    font-size: 18px;
+}
+
+.search-box input {
+    margin-left: 8px;
+    border: none;
+}
+
+.search-container .fa-angle-down {
+    margin-left: 12px;
+}
+
+
+.nav-one-right {
+    display: flex;
+    margin-right: 24px;
+    gap: 8px;
+}
+
+.nav-one-right li {
+    height: 60px;
+    /* margin-right: 32px; */
+    list-style: none;
+}
+
+.nav-one-right li a {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.nav-two {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-two-ul {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-two-ul li {
+    list-style: none;
+    height: 50px;
+}
+
+.nav-two-ul li a {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.nav-one-right i,
+.nav-two-ul i {
+    margin: 0 6px;
+}
+
+nav li a:hover,
+nav a:hover i,
+nav a:hover span,
+.search-box input:focus ::-webkit-input-placeholder  {
+    color: #e60012;
+    transition: 200ms;
+}
+
+.search-container:hover {
+    border-bottom: 1px solid #e60012;
+    transition: 200ms;
+}
+
+.dropdown * {
+    border: 1px solid #000;
+}
+
+/* Dropdown1 */
+
+.dropdown.content1 {
+    position: relative;
+    /* top: -30px; */
+}
+
+.content1-background {
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    width: 100%;
+    top: -120px;
+    height: 530px;
+}
+
+.content1-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 9%;
+    top: -10%;
+    padding-bottom: 80px;
+}
+
+/* .content1 {
+    position: relative;
+    width: 100%;
+    left: 9%;
+} */
+
+.content1 a {
+    text-decoration: none;
+}
+
+.content1-box1 {
+    width: 700px;
+}
+
+.content1-box1 li {
+    margin-top: 24px;
+    list-style: none;
+}
+
+.content1-box1 li a {
+    color: #e60012;
+}
+
+.content1 img {
+    width: 200px;
+}
+
+.content1-box2 {
+    margin-left: 80px;
+}
+
+.store-products-container {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.store-products-box {
+    width: 480px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 0.25rem;
+}
+
+.store-products-box a {
+    display: flex;
+}
+
+.store-products-box-div {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.store-products-box-div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-products-box-div span {
+    padding-left: 4px;
+    border-left: 2px solid #e60012;
+}
+
+.fa-heart {
+    color: #e60012;
+    font-size: 20px;
+}
+
+.content1-box1 li a:hover  {
+    color: #b6000f;
+    transition: 200ms;
+}
+
+.store-products-box a:hover h3 {
+    color: #e60012;
+    transition: 200ms;
+}
+
+.store-products-box a:hover img {
+    filter: brightness(50%);
+    transition: 200ms;
+} 

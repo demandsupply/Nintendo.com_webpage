@@ -155,20 +155,22 @@ nav a:hover span,
 
 .dropdown.content1 {
     position: relative;
+    display: block;
+    width: 100%;
     /* top: -30px; */
 }
 
 .content1-background {
     position: absolute;
-    background-color: #ffffff;
+    background-color: #d0a9a9;
     border: 1px solid #000;
-    width: 100%;
-    top: -120px;
+    width: max-content;
+    top: -30px;
     height: 530px;
 }
 
 .content1-container {
-    width: 80%;
+    width: ;
     display: flex;
     justify-content: space-evenly;
     position: absolute;

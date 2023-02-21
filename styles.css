@@ -35,6 +35,12 @@ body {
     position: relative;
     display: flex;
     gap: 16px;
+}
+
+.logo,
+.fa-search,
+.dropdown1 input,
+.dropdown2 {
     z-index: 2;
 }
 
@@ -79,6 +85,7 @@ body {
 .search-box input {
     margin-left: 8px;
     border: none;
+    outline: none;
 }
 
 .search-container .fa-angle-down {
@@ -151,32 +158,49 @@ nav a:hover span,
     border: 1px solid #000;
 }
 
+/* Position all the dropdown's */
+
+.dropdown1,
+.dropdown2,
+.dropdown3,
+.dropdown4,
+.dropdown5,
+.dropdown6,
+.dropdown7 {
+    position: relative;
+}
+
 /* Dropdown1 */
 
+
 .dropdown.content1 {
-    position: relative;
+    position: absolute;
     display: block;
-    width: 100%;
+    /* width: 100vw; */
     /* top: -30px; */
 }
 
 .content1-background {
     position: absolute;
-    background-color: #d0a9a9;
+    background-color: #fff;
     border: 1px solid #000;
-    width: max-content;
+    width: 100vw;
+    left: -170px;
     top: -30px;
     height: 530px;
+    z-index: 0;
 }
 
 .content1-container {
-    width: ;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     position: absolute;
-    left: 9%;
-    top: -10%;
+    /* left: -9000%; */
+    top: 50px;
     padding-bottom: 80px;
+    /* background-color: #d0a9a9; */
+    z-index: 1;
 }
 
 /* .content1 {
@@ -264,3 +288,33 @@ nav a:hover span,
     filter: brightness(50%);
     transition: 200ms;
 } 
+
+/* Dropdown 2 */
+
+.dropdown.content2 {
+    position: absolute;
+    display: block;
+    right: -32px;
+    top: 26px;
+}
+
+.content2-container {
+    width: 180px;
+    background-color: #fff;
+}
+
+.content2-ul li {
+    list-style: none;
+}
+
+.content2-ul li a {
+    display: block;
+    text-decoration: none;    
+    width: 100%;
+    padding: 8px;
+}
+
+.content2-ul li a:hover {
+    background-color: #f5f5f5;
+    color: #484848;
+}

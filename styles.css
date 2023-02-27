@@ -581,9 +581,106 @@ nav a:hover span,
     width: 500px;
 }
 
+/* Section one */
 
-.a {
-    width: 1000px;
-    height: 100px;
+.section-one {
+    width: 100%;
+    position: relative;
+}
+
+.section-one a {
+    text-decoration: none;
+}
+
+.s1-background {
+    width: 100vw;
+    height: 450px;
     background-image: url(https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/ncom/en_US/merchandising/center-stage-banner/kirbys-return-to-dreamland-deluxe/Ncom_PLP_bg_pattern);
 }
+
+.s1-kirby-container {
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1300px;
+    left: 10px;
+}
+
+.h2-big {
+    font-size: 26px;
+}
+
+.s1-kirby-container img {
+    max-width: 100%;
+}
+
+.s1-kirby-order {
+    margin-top: 32px;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s1-kirby-order > div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.button.preorder {
+    width: 180px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 44px;
+}
+
+.esrb {
+    display: flex;
+    gap: 8px;
+} 
+
+.esrb img {
+    width: 48px;
+}
+
+.esrb div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.esrb p {
+    font-size: 11px;
+    padding: 4px 0;
+}
+
+.esrb p:first-of-type {
+    border-bottom: 1px solid #000;
+}
+
+.s1-kirby-feat {
+    /* position: relative; */
+    max-width: 100%;
+    margin-top: 48px;
+    padding-top: 48px;
+    border-top: 1px solid rgb(218,218,218);
+}
+
+.button.button.preorder:hover {
+    background-color: #b6000f;
+}
+
+/* Featured carousel */
+
+.s1-feat-container {
+    margin: 300px auto 0 auto;
+    border: 1px solid #000;
+    width: 100vw;
+    height: 400px;
+}
+

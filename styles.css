@@ -15,6 +15,10 @@ body {
     font-family: 'Raleway';
 }
 
+body a {
+    text-decoration: none;
+}
+
 .nav-container {
     width: 100%;
 }
@@ -631,7 +635,8 @@ nav a:hover span,
     gap: 30px;
 }
 
-.button.preorder {
+.button.preorder,
+.button.shopping {
     width: 180px;
     color: #fff;
     font-weight: 700;
@@ -671,7 +676,8 @@ nav a:hover span,
     border-top: 1px solid rgb(218,218,218);
 }
 
-.button.button.preorder:hover {
+.button.button.preorder:hover,
+.button.shopping:hover {
     background-color: #b6000f;
 }
 
@@ -679,8 +685,101 @@ nav a:hover span,
 
 .s1-feat-container {
     margin: 300px auto 0 auto;
-    border: 1px solid #000;
+    border-bottom: 1px solid rgb(218, 218, 218);
     width: 100vw;
     height: 400px;
 }
 
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.s1-feat-box {
+    position: relative;
+    border: 1px solid rgb(218, 218, 218);
+    width: 360px;
+    height: 320px;
+}
+
+.s1-feat-box img {
+    position: relative;
+    bottom: 0;
+    width: 300px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+
+.s1-feat-box img:first-of-type {
+    background-color: #000;
+}
+
+.s1-feat-box div {
+    padding: 20px 18px;
+    height: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+
+}
+
+.s1-feat-box p,
+.s1-feat-box h4 {
+    display: block;
+}
+
+.s1-feat-box p {
+    padding: 0 8px;
+    border-left: 3px solid #e60012;
+}
+
+.s1-feat-box:hover h4 strong {
+    color: #e60012;
+    transition: 200ms;
+}
+
+.s1-feat-box:hover img {
+    bottom: 25px;
+    transition: 0.5s;
+}
+
+.carousel-button {
+    position: absolute;
+}
+
+/* Section two */
+
+.section-two-container {
+    width: 100%;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.section-two {
+    width: 1100px;
+    margin: auto;
+}
+
+.section-two img {
+    display: block;
+    width: 1100px;
+}
+
+.h2-big {
+    margin: 40px 0 32px 0;
+}
+
+.section-two > div {
+    margin: 32px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    /* border: 1px solid #000; */
+}
+
+.section-two div p {
+    font-size: 20px;
+}

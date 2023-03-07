@@ -636,7 +636,8 @@ nav a:hover span,
 }
 
 .button.preorder,
-.button.shopping {
+.button.shopping,
+.button.explore {
     width: 180px;
     color: #fff;
     font-weight: 700;
@@ -677,14 +678,15 @@ nav a:hover span,
 }
 
 .button.button.preorder:hover,
-.button.shopping:hover {
+.button.shopping:hover,
+.button.explore:hover  {
     background-color: #b6000f;
 }
 
 /* Featured carousel */
 
 .s1-feat-container {
-    margin: 300px auto 0 auto;
+    margin: 390px auto 0 auto;
     border-bottom: 1px solid rgb(218, 218, 218);
     width: 100vw;
     height: 400px;
@@ -753,17 +755,20 @@ nav a:hover span,
 
 /* Section two */
 
-.section-two-container {
+.section-two-container,
+.section-three-container {
     width: 100%;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 
-.section-two {
+.section-two,
+.section-three {
     width: 1100px;
     margin: auto;
 }
 
-.section-two img {
+.section-two img,
+.section-three img {
     display: block;
     width: 1100px;
 }
@@ -772,7 +777,8 @@ nav a:hover span,
     margin: 40px 0 32px 0;
 }
 
-.section-two > div {
+.section-two > div,
+.section-three > div {
     margin: 32px 0 40px 0;
     display: flex;
     justify-content: space-between;
@@ -780,6 +786,15 @@ nav a:hover span,
     /* border: 1px solid #000; */
 }
 
-.section-two div p {
+.section-two div p,
+.section-three div p {
     font-size: 20px;
+}
+
+/* Section three */
+
+.section-three > div {
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
 }

@@ -637,7 +637,8 @@ nav a:hover span,
 
 .button.preorder,
 .button.shopping,
-.button.explore {
+.button.explore,
+.button.see {
     width: 180px;
     color: #fff;
     font-weight: 700;
@@ -679,7 +680,8 @@ nav a:hover span,
 
 .button.button.preorder:hover,
 .button.shopping:hover,
-.button.explore:hover  {
+.button.explore:hover,
+.button.see:hover  {
     background-color: #b6000f;
 }
 
@@ -756,13 +758,15 @@ nav a:hover span,
 /* Section two */
 
 .section-two-container,
-.section-three-container {
+.section-three-container,
+.section-four-container {
     width: 100%;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 .section-two,
-.section-three {
+.section-three,
+.section-four {
     width: 1100px;
     margin: auto;
 }
@@ -797,4 +801,87 @@ nav a:hover span,
     justify-content: left;
     align-items: center;
     gap: 50px;
+}
+
+/* Section four */
+
+.section-four * {
+    /* border: 1px solid #000; */
+}
+
+.s4-news-container-one {
+    display: flex;
+    gap: 50px;
+}
+
+.s4-news-container-one img {
+    width: 525px;
+}
+
+.s4-news-box {
+    width: 525px;
+}
+
+.s4-news-box span,
+.s4-news-minibox span {
+    display: block;
+    margin: 12px 0 20px 0;
+}
+
+.s4-news-box strong,
+.s4-news-minibox strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.readmore {
+    width: fit-content;
+    margin: 24px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #e60012;
+    border-bottom: 2px solid #e60012;
+}
+
+.s4-news-container-two {
+    margin-top: 40px;
+    display: flex;
+    gap: 24px;
+}
+
+.s4-news-container-two img {
+    width: 250px;
+}
+
+.s4-news-minibox strong {
+    height: 60px;
+}
+
+
+.s4-news-box a:hover strong,
+.s4-news-minibox a:hover strong {
+    color: #e60012;
+    transition: 200ms;
+}
+
+.s4-news-box a:hover .readmore,
+.s4-news-minibox a:hover .readmore  {
+    color: #b6000f;
+    transition: 200ms;
+}
+
+.s4-news-box a:hover img,
+.s4-news-minibox a:hover img {
+    filter: brightness(80%);
+    transition: 200ms;
+}
+
+.button.see {
+    width: 240px;
+}
+
+.button.see i {
+    color: #fff;
+    margin-right: 12px;
 }

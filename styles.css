@@ -759,14 +759,16 @@ nav a:hover span,
 
 .section-two-container,
 .section-three-container,
-.section-four-container {
+.section-four-container,
+.section-five-container {
     width: 100%;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 .section-two,
 .section-three,
-.section-four {
+.section-four,
+.section-five {
     width: 1100px;
     margin: auto;
 }
@@ -884,4 +886,58 @@ nav a:hover span,
 .button.see i {
     color: #fff;
     margin-right: 12px;
+}
+
+/* Section five */
+
+.s5-char-container {
+    display: flex;
+    gap: 16px;
+}
+
+.s5-img {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.s5-box img {
+    width: 270px;
+    border-radius: 8px;
+    transition: 0.5s all ease-in-out;
+}
+
+.s5-1 {
+    background-image: url(./images/characters1b.avif);
+    background-size: 310px;
+    background-position: center;
+}
+
+.s5-2 {
+    background-image: url(./images/characters2b.avif);
+    background-size: 310px;
+    background-position: center;
+}
+
+.s5-3 {
+    background-image: url(./images/characters3b.avif);
+    background-size: 310px;
+    background-position: center;
+}
+
+.s5-4 {
+    background-image: url(./images/characters4b.avif);
+    background-size: 310px;
+    background-position: center;
+}
+
+.s5-box p {
+    margin-top: 10px;
+    color: #484848;
+    font-size: 20px;
+}
+
+.s5-box:hover img {
+    transform: scale(1.1);
+    background-position: center;
+    background-size: 95%;
 }

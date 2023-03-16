@@ -672,10 +672,9 @@ nav a:hover span,
 
 .s1-kirby-feat {
     /* position: relative; */
-    max-width: 100%;
-    margin-top: 48px;
+    max-width: 1100px;
+    margin: -32px auto 48px;
     padding-top: 48px;
-    border-top: 1px solid rgb(218,218,218);
 }
 
 .button.button.preorder:hover,
@@ -688,27 +687,32 @@ nav a:hover span,
 /* Featured carousel */
 
 .s1-feat-container {
-    margin: 390px auto 0 auto;
-    border-bottom: 1px solid rgb(218, 218, 218);
-    width: 100vw;
+    margin: 290px auto 0 auto;
+    /* border-bottom: 1px solid rgb(218, 218, 218); */
+    width: 1100px;
     height: 400px;
+    /* overflow: hidden; */
 }
 
-.carousel {
+.carousel,
+.s6carousel {
     position: relative;
     display: flex;
     align-items: center;
     gap: 60px;
 }
 
-.s1-feat-box {
+.s1-feat-box,
+.s6-box {
     position: relative;
+    border-radius: 6px 6px 0 0;
     border: 1px solid rgb(218, 218, 218);
     width: 360px;
     height: 320px;
 }
 
-.s1-feat-box img {
+.s1-feat-box img,
+.s6-box img {
     position: relative;
     bottom: 0;
     width: 300px;
@@ -732,23 +736,28 @@ nav a:hover span,
 }
 
 .s1-feat-box p,
-.s1-feat-box h4 {
+.s1-feat-box h4,
+.s6-box p,
+.s6-box h4 {
     display: block;
 }
 
-.s1-feat-box p {
+.s1-feat-box p,
+.s6-box > div > div > div > span {
     padding: 0 8px;
     border-left: 3px solid #e60012;
 }
 
-.s1-feat-box:hover h4 strong {
+.s1-feat-box:hover h4 strong,
+.s6-box:hover h4 strong {
     color: #e60012;
     transition: 200ms;
 }
 
-.s1-feat-box:hover img {
-    bottom: 25px;
-    transition: 0.5s;
+.s1-feat-box:hover img,
+.s6-box:hover img  {
+    bottom: 20px;
+    transition: 0.3s;
 }
 
 .carousel-button {
@@ -757,10 +766,23 @@ nav a:hover span,
 
 /* Section two */
 
+.section-two-container {
+    position: relative;
+}
+
+.s1greyline {
+    position: absolute;
+    margin-top: -530px;
+    width: 100vw;
+    border-bottom: 1px solid rgb(218,218,218);
+}
+
+.section-one-container,
 .section-two-container,
 .section-three-container,
 .section-four-container,
-.section-five-container {
+.section-five-container,
+.section-six-container {
     width: 100%;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
@@ -768,7 +790,8 @@ nav a:hover span,
 .section-two,
 .section-three,
 .section-four,
-.section-five {
+.section-five,
+.section-six {
     width: 1100px;
     margin: auto;
 }
@@ -803,6 +826,7 @@ nav a:hover span,
     justify-content: left;
     align-items: center;
     gap: 50px;
+    margin-bottom: 64px;
 }
 
 /* Section four */
@@ -881,6 +905,7 @@ nav a:hover span,
 
 .button.see {
     width: 240px;
+    margin: 12px 0 60px 0;
 }
 
 .button.see i {
@@ -898,6 +923,10 @@ nav a:hover span,
 .s5-img {
     border-radius: 8px;
     overflow: hidden;
+}
+
+.s5-box {
+    margin-bottom: 60px;
 }
 
 .s5-box img {
@@ -940,4 +969,69 @@ nav a:hover span,
     transform: scale(1.1);
     background-position: center;
     background-size: 95%;
+}
+
+/* Section six */
+
+.s6-title-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* border: 1px solid #000; */
+
+}
+
+.s6-title-container p {
+    border-right: 1px solid rgb(218, 218, 218);
+    margin-top: 32px;
+    padding-right: 20px;
+}
+
+.s6-title-container a {
+    font-weight: 700;
+    color: #e60012;
+    text-decoration: underline;
+    /* border: 1px solid #000; */
+}
+
+.s6-box {
+    height: 380px;
+}
+
+.s6-box > div {
+    padding: 20px 18px;
+    height: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+}
+
+.release {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.dollarprice {
+    margin: 12px 0;
+}
+
+.s6-box > div > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s6-box i {
+    font-size: 30px;
+}
+
+.s6-part2 {
+    margin-top: 64px;
+}
+
+.s6carousel-container {
+    overflow: hidden;
 }

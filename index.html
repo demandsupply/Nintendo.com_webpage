@@ -20,7 +20,7 @@
                             <p>Nintendo</p>
                         </a>
                         <div class="search-container">
-                            <a href="#" class="search-box dropdown1" onclick="myFunction()" id="click-one">
+                            <a href="#" class="search-box dropdown1" onclick="show('content1');" id="click-one">
                                 <i class="fas fa-search"></i>
                                 <input type="text" placeholder="Search games, hardware, news, etc">
                                 <!-- Dropdown content 1 -->
@@ -93,7 +93,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="dropdown2">
+                            <a href="#" class="dropdown2" onclick="show('content2');">
                                 <span>All categories</span>
                                 <i class="fas fa-angle-down"></i>
                                 <!-- Dropdown content 2 -->
@@ -139,172 +139,173 @@
                 <div class="nav-two">
                     <ul class="nav-two-ul">
                         <li>
-                            <a href="#">
+                            <a href="#" onclick="show('content3');">
                                 <i class="fa-brands fa-app-store-ios"></i> My Nintendo Store
                                 <i class="fas fa-angle-down"></i>
                             </a>
+                             <!-- Dropdown content 3 -->
+                            <div class="dropdown content3" id="content3">
+                                <div class="content3-container">
+                                    <div class="c3-title-container">
+                                        <h1><a href="">My Nintendo Store</a></h1>
+                                        <button class="close" onclick="closeButton('close3')">x</button>
+                                    </div>
+                                    <div class="c3-title-fancy"></div>
+                                    <div class="c3-box-container">
+                                        <ul class="c3-column">
+                                            <li class="c3-box-title">
+                                                <i class="fa-solid fa-gamepad"></i>
+                                                <a href="#"><strong>Games</strong></a>
+                                            </li>
+                                            <li><a href="#">Nintendo Switch games</a></li>
+                                            <li><a href="#">New releases</a></li>
+                                            <li><a href="#">Sales & deals</a></li>
+                                        </ul>
+                                        <ul class="c3-column">
+                                            <li class="c3-box-title">
+                                                <i class="fa-solid fa-sharp fa-memory"></i>
+                                                <a href="#"><strong>Hardware</strong></a>
+                                            </li>
+                                            <li><a href="#">Nintendo Switch systems</a></li>
+                                            <li><a href="#">Joy-Con & controllers</a></li>
+                                            <li><a href="#">Cases & more</a></li>
+                                            <li><a href="#">Replacement parts</a></li>
+                                        </ul>
+                                        <ul class="c3-column">
+                                            <li class="c3-box-title">
+                                                <i class="fa-solid fa-shirt"></i>
+                                                <a href="#"><strong>Merchandise</strong></a>
+                                            </li>
+                                            <li><a href="#">Apparel & accessories</a></li>
+                                            <li><a href="#">Home & office</a></li>
+                                            <li><a href="#">Plush</a></li>
+                                            <li><a href="#">Toys</a></li>
+                                        </ul>
+                                        <ul class="c3-column">
+                                            <li class="c3-box-title">
+                                                <i class="fa-solid fa-star"></i>
+                                                <a href="#"><strong>Store exclusives</strong></a>
+                                            </li>
+                                            <li><a href="#">Exclusive products</a></li>
+                                            <li><a href="#">My Nintendo rewards</a></li>
+                                            <li><a href="#">Nintendo Switch Online offers</a></li>
+                                        </ul>
+                                        <ul class="c3-column">
+                                            <li class="c3-box-title">
+                                                <i class="fa-solid fa-person"></i>
+                                                <a href="#"><strong>Characters</strong></a>
+                                            </li>
+                                            <li><a href="#">Animal Crossing</a></li>
+                                            <li><a href="#">Splatoon</a></li>
+                                            <li><a href="#">Mario</a></li>
+                                            <li><a href="#">The Legend of Zelda</a></li>
+                                        </ul>
+                                        <ul class="c3-column">
+                                            <li class="c3-box-title">
+                                                <i class="fa-solid fa-sharp fa-tag"></i>
+                                                <a href="#"><strong>Sales & deals</strong></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="button shop-all">
+                                        <a href="https://www.nintendo.com/store/">Shop all</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <!-- Dropdown content 3 -->
                         <li>
-                            <a href="#">
+                            <a href="#" onclick="show('content4');">
                                 <i class="fa-solid fa-gamepad"></i> Games
                                 <i class="fas fa-angle-down"></i>
                             </a>
+                            <!-- Dropdown content 4 -->
+                            <div class="dropdown content4" id="content4">
+                                <div class="content4-container">
+                                    <div class="c4-boxes-container">
+                                        <a href="https://www.nintendo.com/store/games/nintendo-switch-games/" class="c4-box">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                            <p>Nintendo Switch games</p>
+                                        </a>
+                                        <a href="https://www.nintendo.com/store/games/new-releases/" class="c4-box">
+                                            <i class="fa-solid fa-file-circle-plus"></i>
+                                            <p>New releases</p>
+                                        </a>
+                                        <a href="https://www.nintendo.com/store/games/coming-soon/" class="c4-box">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                            <p>Coming soon</p>
+                                        </a>
+                                        <a href="https://www.nintendo.com/store/games/" class="c4-box">
+                                            <i class="fa-brands fa-shopify"></i>
+                                            <p>Shop games</p>
+                                        </a>
+                                    </div>
+                                    <button class="close grey" id="close-one">x</button>
+                                </div>
+                            </div>
+                            
                         </li>
-                        <!-- Dropdown content 4 -->
                         <li>
-                            <a href="#">
+                            <a href="#" onclick="show('content5');">
                                 <i class="fa-solid fa-toggle-on"></i> Nintendo Switch
                                 <i class="fas fa-angle-down"></i>
                             </a>
+                            <!-- Dropdown content 5 -->
+                            <div class="dropdown content5" id="content5">
+                                <div class="content5-container">
+                                    <div class="c5-boxes-container">
+                                        <a href="https://www.nintendo.com/switch/" class="c5-box">
+                                            <img src="./images/lineup.avif" alt="">
+                                            <p>Nintendo Switch lineup</p>
+                                        </a>
+                                        <a href="https://www.nintendo.com/switch/compare/" class="c5-box">
+                                            <i class="fa-solid fa-arrows-left-right"></i>
+                                            <p>Compare systems</p>
+                                        </a>
+                                        <a href="https://www.nintendo.com/switch/online-service/" class="c5-box">
+                                            <i class="fa-solid fa-cloud"></i>
+                                            <p>Online service</p>
+                                        </a>
+                                        <a href="https://www.nintendo.com/store/hardware/" class="c5-box">
+                                            <img src="./images/procon.avif" alt="">
+                                            <p>Accessories</p>
+                                        </a>
+                                        <a href="https://www.nintendo.com/store/hardware/systems/" class="c5-box">
+                                            <img src="./images/oled.avif" alt="">
+                                            <p>Shop systems</p>
+                                        </a>
+                                    </div>
+                                    <button class="close grey" id="close-two">x</button>
+                                </div>
+                            </div>        
                         </li>
-                        <!-- Dropdown content 5 -->
                         <li>
                             <a href="https://www.nintendo.com/whatsnew/">
                                 <i class="fa-solid fa-newspaper"></i> News & Events
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" onclick="show('content6');">
                                 <i class="fa-solid fa-star"></i> Play Nintendo
                                 <i class="fas fa-angle-down"></i>
                             </a>
+                             <!-- Dropdown content 6 -->
+                            <div class="dropdown content6" id="content6">
+                                <div class="content6-container">
+                                    <div class="c6-boxes-container">
+                                        <a href="" class="c6-box">
+                                            <i class="fa-solid fa-children"></i>
+                                            <p>For kids</p>
+                                        </a>
+                                        <a href="" class="c6-box">
+                                            <i class="fa-solid fa-people-group"></i>
+                                            <p>For parents</p>
+                                        </a>
+                                        <button class="close grey" id="close-two">x</button>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <!-- Dropdown content 6 -->
                     </ul>
-                    <div class="dropdown content3" id="content3">
-                        <div class="content3-container">
-                            <div class="c3-title-container">
-                                <h1><a href="">My Nintendo Store</a></h1>
-                                <button class="close" id="close">x</button>
-                            </div>
-                            <div class="c3-title-fancy"></div>
-                            <div class="c3-box-container">
-                                <ul class="c3-column">
-                                    <li class="c3-box-title">
-                                        <i class="fa-solid fa-gamepad"></i>
-                                        <a href="#"><strong>Games</strong></a>
-                                    </li>
-                                    <li><a href="#">Nintendo Switch games</a></li>
-                                    <li><a href="#">New releases</a></li>
-                                    <li><a href="#">Sales & deals</a></li>
-                                </ul>
-                                <ul class="c3-column">
-                                    <li class="c3-box-title">
-                                        <i class="fa-solid fa-sharp fa-memory"></i>
-                                        <a href="#"><strong>Hardware</strong></a>
-                                    </li>
-                                    <li><a href="#">Nintendo Switch systems</a></li>
-                                    <li><a href="#">Joy-Con & controllers</a></li>
-                                    <li><a href="#">Cases & more</a></li>
-                                    <li><a href="#">Replacement parts</a></li>
-                                </ul>
-                                <ul class="c3-column">
-                                    <li class="c3-box-title">
-                                        <i class="fa-solid fa-shirt"></i>
-                                        <a href="#"><strong>Merchandise</strong></a>
-                                    </li>
-                                    <li><a href="#">Apparel & accessories</a></li>
-                                    <li><a href="#">Home & office</a></li>
-                                    <li><a href="#">Plush</a></li>
-                                    <li><a href="#">Toys</a></li>
-                                </ul>
-                                <ul class="c3-column">
-                                    <li class="c3-box-title">
-                                        <i class="fa-solid fa-star"></i>
-                                        <a href="#"><strong>Store exclusives</strong></a>
-                                    </li>
-                                    <li><a href="#">Exclusive products</a></li>
-                                    <li><a href="#">My Nintendo rewards</a></li>
-                                    <li><a href="#">Nintendo Switch Online offers</a></li>
-                                </ul>
-                                <ul class="c3-column">
-                                    <li class="c3-box-title">
-                                        <i class="fa-solid fa-person"></i>
-                                        <a href="#"><strong>Characters</strong></a>
-                                    </li>
-                                    <li><a href="#">Animal Crossing</a></li>
-                                    <li><a href="#">Splatoon</a></li>
-                                    <li><a href="#">Mario</a></li>
-                                    <li><a href="#">The Legend of Zelda</a></li>
-                                </ul>
-                                <ul class="c3-column">
-                                    <li class="c3-box-title">
-                                        <i class="fa-solid fa-sharp fa-tag"></i>
-                                        <a href="#"><strong>Sales & deals</strong></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="button shop-all">
-                                <a href="https://www.nintendo.com/store/">Shop all</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dropdown content4" id="content4">
-                        <div class="content4-container">
-                            <div class="c4-boxes-container">
-                                <a href="https://www.nintendo.com/store/games/nintendo-switch-games/" class="c4-box">
-                                    <i class="fa-solid fa-gamepad"></i>
-                                    <p>Nintendo Switch games</p>
-                                </a>
-                                <a href="https://www.nintendo.com/store/games/new-releases/" class="c4-box">
-                                    <i class="fa-solid fa-file-circle-plus"></i>
-                                    <p>New releases</p>
-                                </a>
-                                <a href="https://www.nintendo.com/store/games/coming-soon/" class="c4-box">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                    <p>Coming soon</p>
-                                </a>
-                                <a href="https://www.nintendo.com/store/games/" class="c4-box">
-                                    <i class="fa-brands fa-shopify"></i>
-                                    <p>Shop games</p>
-                                </a>
-                            </div>
-                            <button class="close grey" id="close-one">x</button>
-                        </div>
-                    </div>
-                    <div class="dropdown content5" id="content5">
-                        <div class="content5-container">
-                            <div class="c5-boxes-container">
-                                <a href="https://www.nintendo.com/switch/" class="c5-box">
-                                    <img src="./images/lineup.avif" alt="">
-                                    <p>Nintendo Switch lineup</p>
-                                </a>
-                                <a href="https://www.nintendo.com/switch/compare/" class="c5-box">
-                                    <i class="fa-solid fa-arrows-left-right"></i>
-                                    <p>Compare systems</p>
-                                </a>
-                                <a href="https://www.nintendo.com/switch/online-service/" class="c5-box">
-                                    <i class="fa-solid fa-cloud"></i>
-                                    <p>Online service</p>
-                                </a>
-                                <a href="https://www.nintendo.com/store/hardware/" class="c5-box">
-                                    <img src="./images/procon.avif" alt="">
-                                    <p>Accessories</p>
-                                </a>
-                                <a href="https://www.nintendo.com/store/hardware/systems/" class="c5-box">
-                                    <img src="./images/oled.avif" alt="">
-                                    <p>Shop systems</p>
-                                </a>
-                            </div>
-                            <button class="close grey" id="close-two">x</button>
-                        </div>
-                    </div>
-                    <div class="dropdown content6" id="content6">
-                        <div class="content6-container">
-                            <div class="c6-boxes-container">
-                                <a href="" class="c6-box">
-                                    <i class="fa-solid fa-children"></i>
-                                    <p>For kids</p>
-                                </a>
-                                <a href="" class="c6-box">
-                                    <i class="fa-solid fa-people-group"></i>
-                                    <p>For parents</p>
-                                <button class="close grey" id="close-two">x</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </nav>
         </div>
@@ -769,5 +770,6 @@
                 </div>
             </div>
         </div>
+
     </body>
 </html>

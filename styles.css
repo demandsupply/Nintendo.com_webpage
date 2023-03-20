@@ -569,6 +569,18 @@ nav a:hover span,
     transition: 200ms;
 }
 
+.fa-angle-down {
+    transform: rotate(0);
+}
+
+.dropdown2:active .fa-angle-down,
+.click3:active .fa-angle-down,
+.click4:active .fa-angle-down,
+.click5:active .fa-angle-down,
+.click6:active .fa-angle-down {
+    transform: rotate(360deg);
+}
+
 .close.grey {
     background-color: #cecece;
     color: #fff;

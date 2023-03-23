@@ -1083,3 +1083,140 @@ nav a:hover span,
 .s6carousel-container {
     overflow: ;
 }
+
+footer {
+    width: 100%;
+}
+
+.footer1,
+.footer2,
+.footer3 {
+    width: 1200px;
+    margin: auto;
+}
+
+.footer1-container {
+    margin-top: 160px;
+    height: 150px;
+    background-color: #e60012;
+}
+
+.footer1 {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer1 .logo p {
+    font-size: 32px;
+    padding: 0px 12px;
+    border: 5px solid #fff;
+}
+
+.social-container {
+    display: flex;
+    gap: 48px;
+}
+.social-container .fa-brands {
+    color: #fff;
+    font-size: 32px;
+}
+
+.footer2-container {
+    margin-top: 64px;
+    height: 450px;
+}
+
+.footer2 {
+    position: relative;
+    display: flex;
+}
+
+.footer2 > div {
+    /* border: 1px solid #000; */
+    flex: 1;
+}
+
+.footer2 > div > div:last-of-type {
+    margin-top: 24px;
+}
+
+.footer-column {
+    border-left: 1px solid #cecece;
+    padding: 0 24px 0 16px;
+}
+
+.footer2 > .footer-column:first-of-type {
+    border: none;
+}
+
+.footer-column a {
+    display: block;
+    margin-top: 16px;
+    /* border: 1px solid #000; */
+    width: fit-content;
+}
+
+.footer-column a strong {
+    color: #e60012;
+    font-size: 14px;
+    border-bottom: 2px solid #fff;
+}
+
+.footer2-container img {
+    position: absolute;
+    right: 0;
+    bottom: -125px;
+    width: 64px;
+}
+
+.footer2 a:hover strong {
+    color: #b6000f;
+    border-bottom: 2px solid #b6000f;
+    transition: .2s;
+}
+
+.footer3-container {
+    background-color: #484848;
+    height: 150px;
+}
+
+.footer3 p,
+.footer3 a {
+    font-size: 12px;
+    color: #fff;
+    border-bottom: 2px solid #484848;
+}
+
+.footer3 {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer3sub {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer3sub a {
+    margin-right: 6px;
+    width: fit-content;
+}
+
+.region {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer3 a:hover {
+    border-bottom: 2px solid #fff;
+    transition: .2s;
+
+}

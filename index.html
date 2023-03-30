@@ -8,8 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-        <!-- <script src="javascript.js" defer ></script> -->
-        <script src="./javascript.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <body>
         <div class="nav-container">
@@ -336,69 +335,72 @@
             </div>
             <div class="s1-feat-container">
                 <div class="carousel" data-carousel>
-                    <button class="carousel-button prev" data-carousel-button="prev"><i class="fa fa-angle-left"></i></button>
-                    <button class="carousel-button next" data-carousel-button="next"><i class="fa fa-angle-right"></i></button>
-                    <a href="https://www.nintendo.com/nintendo-direct/03-09-2023/" class="s1-feat-box">
-                        <img src="./images/feat1.avif" alt="">
-                        <div>
-                            <h4><strong>Tune in 3/9 at 2:00 p.m. PT | 5:00 p.m. ET</strong></h4>
-                        </div>
-                    </a>
-                    <a href="https://www.nintendo.com/store/games/mario-games/" class="s1-feat-box">
-                        <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/My%20Nintendo%20Store/EN-US/MNS%20HOME/Characters/NINMERCH-1468-1920x1080-GridPromos-MarioFriends_v01" alt="">
-                        <div>
-                            <h4><strong>Check out games featuring Mario and freinds!</strong></h4>
-                        </div>
-                    </a>
-                    <a href="https://www.nintendo.com/store/products/metroid-prime-remastered-switch/" class="s1-feat-box">
-                        <img src="./images/feat3.avif" alt="">
-                        <div>
-                            <h4><strong>Metroid Prime Remastered - Available now</strong></h4>
-                            <p>Nintendo Switch</p>
-                        </div>
-                    </a>
-                    <a href="https://www.nintendo.com/store/products/splatoon-3-switch/" class="s1-feat-box">
-                        <img src="./images/feat4.avif" alt="">
-                        <div>
-                            <h4><strong>Splatoon 3 Pre-order now</strong></h4>
-                            <p>Nintendo Switch</p>
-                        </div>
-                    </a>
-                    <a href="https://www.nintendo.com/store/products/bayonetta-origins-cereza-and-the-lost-demon-switch/" class="s1-feat-box">
-                        <img src="./images/feat5.avif" alt="">
-                        <div>
-                            <h4><strong>Bayonetta Origins - Pre-order now</strong></h4>
-                            <p>Nintendo Switch</p>
-                        </div>
-                    </a>
-                    <a href="#" class="s1-feat-box">
-                        <img src="./images/feat6.avif" alt="">
-                        <div>
-                            <h4><strong>007 Golden Eye</strong></h4>
-                            <p>Nintendo Switch</p>
-                        </div>
-                    </a>
-                    <a href="#" class="s1-feat-box">
-                        <img src="./images/feat7.avif" alt="">
-                        <div>
-                            <h4><strong>Mario + Rabbids - Sparks of Hope</strong></h4>
-                            <p>Nintendo Switch</p>
-                        </div>
-                    </a>
-                    <a href="#" class="s1-feat-box">
-                        <img src="./images/feat8.avif" alt="">
-                        <div>
-                            <h4><strong>Mario Kart 8 Deluxe - Booster Course Pass</strong></h4>
-                            <p>Nintendo Switch</p>
-                        </div>
-                    </a>
-                    <a href="#" class="s1-feat-box">
-                        <img src="./images/feat9.avif" alt="">
-                        <div>
-                            <h4><strong>Animal Crossing - Happy Home Paradise</strong></h4>
-                            <p>Nintendo Switch</p>
-                        </div>
-                    </a>
+                    <div class="carousel-buttons">
+                        <button class="carousel-button prev" data-carousel-button-prev-one><i class="fa fa-angle-left"></i></button>
+                        <button class="carousel-button next" data-carousel-button-next-one><i class="fa fa-angle-right"></i></button></div>
+                    <div class="slides-container slide-one" data-slides-one> 
+                        <a href="https://www.nintendo.com/nintendo-direct/03-09-2023/" class="s1-feat-box">
+                            <img src="./images/feat1.avif" alt="">
+                            <div>
+                                <h4><strong>Tune in 3/9 at 2:00 p.m. PT | 5:00 p.m. ET</strong></h4>
+                            </div>
+                        </a>
+                        <a href="https://www.nintendo.com/store/games/mario-games/" class="s1-feat-box">
+                            <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/My%20Nintendo%20Store/EN-US/MNS%20HOME/Characters/NINMERCH-1468-1920x1080-GridPromos-MarioFriends_v01" alt="">
+                            <div>
+                                <h4><strong>Check out games featuring Mario and friends!</strong></h4>
+                            </div>
+                        </a>
+                        <a href="https://www.nintendo.com/store/products/metroid-prime-remastered-switch/" class="s1-feat-box">
+                            <img src="./images/feat3.avif" alt="">
+                            <div>
+                                <h4><strong>Metroid Prime Remastered - Available now</strong></h4>
+                                <p>Nintendo Switch</p>
+                            </div>
+                        </a>
+                        <a href="https://www.nintendo.com/store/products/splatoon-3-switch/" class="s1-feat-box" data-feat-four> 
+                            <img src="./images/feat4.avif" alt="">
+                            <div>
+                                <h4><strong>Splatoon 3 Pre-order now</strong></h4>
+                                <p>Nintendo Switch</p>
+                            </div>
+                        </a>
+                        <a href="https://www.nintendo.com/store/products/bayonetta-origins-cereza-and-the-lost-demon-switch/" class="s1-feat-box">
+                            <img src="./images/feat5.avif" alt="">
+                            <div>
+                                <h4><strong>Bayonetta Origins - Pre-order now</strong></h4>
+                                <p>Nintendo Switch</p>
+                            </div>
+                        </a>
+                        <a href="#" class="s1-feat-box">
+                            <img src="./images/feat6.avif" alt="">
+                            <div>
+                                <h4><strong>007 Golden Eye</strong></h4>
+                                <p>Nintendo Switch</p>
+                            </div>
+                        </a>
+                        <a href="#" class="s1-feat-box">
+                            <img src="./images/feat7.avif" alt="">
+                            <div>
+                                <h4><strong>Mario + Rabbids - Sparks of Hope</strong></h4>
+                                <p>Nintendo Switch</p>
+                            </div>
+                        </a>
+                        <a href="#" class="s1-feat-box">
+                            <img src="./images/feat8.avif" alt="">
+                            <div>
+                                <h4><strong>Mario Kart 8 Deluxe - Booster Course Pass</strong></h4>
+                                <p>Nintendo Switch</p>
+                            </div>
+                        </a>
+                        <a href="#" class="s1-feat-box">
+                            <img src="./images/feat9.avif" alt="">
+                            <div>
+                                <h4><strong>Animal Crossing - Happy Home Paradise</strong></h4>
+                                <p>Nintendo Switch</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -861,5 +863,7 @@
                 </div>
             </div>
         </footer>
+        <!-- <script src="javascript.js" defer ></script> -->
+        <script src="./javascript.js" ></script>
     </body>
 </html>

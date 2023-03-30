@@ -736,18 +736,79 @@ nav a:hover span,
 
 .s1-feat-container {
     margin: 290px auto 0 auto;
-    /* border-bottom: 1px solid rgb(218, 218, 218); */
+    /* border: 1px solid rgb(218, 218, 218); */
     width: 1100px;
     height: 400px;
-    /* overflow: hidden; */
 }
 
-.carousel,
-.s6carousel {
+.carousel {
+    height: 400px;
+    --current-slide: 0;
     position: relative;
+    overflow-x: hidden; 
+}
+
+.slides-container {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     gap: 60px;
+    /*transform: translateX(-100%);*/
+    transition: transform 0.5s;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-button {
+    width: 72px;
+    height: 380px;
+    border: none;
+    background-color: rgba(21, 21, 21, .0);
+    cursor: pointer;
+    z-index: 2;
+    transition: color .1s;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+.carousel-button i {
+    display: block;
+    color: rgb(250, 250, 250, .0);
+    font-size: 40px;
+}
+
+.carousel:hover .carousel-buttons button {
+    background-color: rgb(130, 130, 130, .3);
+    transition: 0.5s;
+}
+
+.carousel:hover button i {
+    color: rgb(250, 250, 250, .7);
+    transition: 0.5s;
+}
+
+.carousel:hover .carousel-buttons .next:hover {
+    background-color: rgb(21, 21, 21, .7);
+    transition: 0.5s;
+}
+
+.carousel:hover button:hover i {
+    color: #fff;
+    font-size: 48px;
+    transition: .5s;
+}
+
+.carousel:hover .carousel-buttons .prev:hover {
+    background-color: rgb(21, 21, 21, .7);
+    transition: 0.5s;
 }
 
 .s1-feat-box,
@@ -757,6 +818,7 @@ nav a:hover span,
     border: 1px solid rgb(218, 218, 218);
     width: 360px;
     height: 320px;
+    /* z-index: 2; */
 }
 
 .s1-feat-box img,
@@ -806,10 +868,6 @@ nav a:hover span,
 .s6-box:hover img  {
     bottom: 20px;
     transition: 0.3s;
-}
-
-.carousel-button {
-    position: absolute;
 }
 
 /* Section two */

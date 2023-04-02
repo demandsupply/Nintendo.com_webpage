@@ -86,38 +86,44 @@ var x = ["content1", "content2", "content3", "content4", "content5", "content6"]
 // }
 
 
-// const carousels = document.querySelectorAll('[data-carousel]');
-// carousels.forEach(setUpcarousel);
+function setUpCarousel(carousel) {
+    // Creates const getting the elements from the html file, using data-attributes
+    const buttonPrev = carousel.querySelector('[data-carousel-button-prev-one');
+    const buttonNext = carousel.querySelector('[data-carousel-button-next-one]');
+    const slidesContainer = carousel.querySelector('[data-slides-one]');
 
-// Creates const getting the elements from the html file, using data-attributes
-const buttonPrev = document.querySelector('[data-carousel-button-prev-one');
-const buttonNext = document.querySelector('[data-carousel-button-next-one]');
-const slidesContainer = document.querySelector('[data-slides-one]');
+    // When click "buttonNext" it will run the "handleNext" function, and when click "buttonPrev" it will do the opposite
+    buttonNext.addEventListener('click', handleNext);
+    buttonPrev.addEventListener('click', handlePrev);
 
-// When click "buttonNext" it will run the "handleNext" function, and when click "buttonPrev" it will do the opposite
-buttonNext.addEventListener('click', handleNext);
-buttonPrev.addEventListener('click', handlePrev);
+    // // Check if you've connected both the buttons: when you cllick on them, on the console appears 'clicked'
+    // buttonNext.addEventListener('click', () => console.log('clicked'));
 
-// // Check if you've connected both the buttons: when you cllick on them, on the console appears 'clicked'
-// buttonNext.addEventListener('click', () => console.log('clicked'));
+    // // Check if the idea of transforming is right
+    // slidesContainer.style.transform = 'translateX(-20%)';
 
-// // Check if the idea of transforming is right
-// slidesContainer.style.transform = 'translateX(-20%)';
+    // Remember which slide are we on
+    let currentSlide = 0;
+    const numSlides = (slidesContainer.children.length)/3;
 
-// Remember which slide are we on
-let currentSlide = 0;
-const numSlides = slidesContainer.children.length - 6;
-
-// Translate the slide x% times the current slide
-function handleNext() {
-    currentSlide = (currentSlide + 1) % numSlides;
-    slidesContainer.style.transform = `translateX(${currentSlide * -100}%)`;
-}
-
-function handlePrev() {
-    currentSlide = (currentSlide - 1) % numSlides;
-    if (currentSlide < 0) {
-        currentSlide += numSlides;
+    // Translate the slide x% times the current slide
+    function handleNext() {
+        currentSlide = (currentSlide + 1) % numSlides;
+        slidesContainer.style.transform = `translateX(${currentSlide * -100}%)`;
     }
-    slidesContainer.style.transform = `translateX(${currentSlide * -100}%)`;
+
+    function handlePrev() {
+        currentSlide = (currentSlide - 1) % numSlides;
+        if (currentSlide < 0) {
+            currentSlide += numSlides;
+        }
+        slidesContainer.style.transform = `translateX(${currentSlide * -100}%)`;
+    }
 }
+
+
+// Create an array which contains all the carousels of the page
+const carousels = document.querySelectorAll('[data-carousel]');
+
+// Apply the function for each carousel of the page
+carousels.forEach(setUpCarousel);
